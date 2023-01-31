@@ -5,8 +5,8 @@ export interface TodoType {
   todo: string;
   done: boolean;
 }
-
-export const Todo:FC = () => {
+console.log(1 && 2);
+export const Todo: FC = () => {
   const [todoList, setTodoList] = useState<TodoType[]>(
     JSON.parse(localStorage.getItem('todoList') || '[]')
   );
